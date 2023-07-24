@@ -1,0 +1,12 @@
+services:
+  backend:
+    volumes: 
+      - .:/usr/src/app
+      - /usr/src/app/node_modules # don't want to map local node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+    depends_on:
+      - postgres
+  
+    
