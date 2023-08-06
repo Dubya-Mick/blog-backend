@@ -6,7 +6,7 @@ services:
     environment:
       - NODE_ENV=development
     command: npm run dev
-    depends_on:
-      - postgres
+    container_name: blog-dev
+
   
     

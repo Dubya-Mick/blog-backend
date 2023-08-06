@@ -1,8 +1,9 @@
 services:
   backend:
+    platform: linux/amd64
+    image: blog-backend-prod
     environment:
       - NODE_ENV=production
     command: npm run prod
-    depends_on:
-      - postgres
+
   
